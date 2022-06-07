@@ -1,4 +1,4 @@
-# M300 -test
+# M300
 
 ## Voraussetzung
     - GitBash

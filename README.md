@@ -5,7 +5,7 @@
     - SSH-Key
     - TBZ Cloud
 
-## SSH-Key erstellen (lokal)
+### SSH-Key erstellen (lokal)
 Die SSH-Keys werden auf dem lokalen Laptop erstellt. Auf Windows muss noch <a href="https://www.w3schools.com">GIT/BASH</a>
 installiert werden.<br>
 
@@ -24,12 +24,12 @@ Github.com -> Profil -> Settings -> SSH und GPG keys -> SSH keys
 
 
 
-## Verbindung auf TBZ Cloud
+### Verbindung auf TBZ Cloud
 
 In Gitbash oder CMD lokal folgenden Befehl ausführen:<br>
 <code>ssh -i C:\Users\Thomas\.ssh\ssh ubuntu@10.4.43.31</code>
 
-## SSH Zugriff auf TBZ Cloud konfigurieren
+### SSH Zugriff auf TBZ Cloud konfigurieren
 
 Public Key in das File schreiben
 echo public_key_string >> ~/.ssh/authorized_keys
@@ -52,15 +52,15 @@ chown -R ubuntu:ubuntu ~/.ssh
 
 <code>vagrant destroy -f</code>
 
-## Weitere Schritte mit Vagrant
+### Weitere Schritte mit Vagrant
 
 https://github.com/ser-cal/M300-Vagrant-Webserver#nginx-webserver-deklarativ-aufsetzen
 
 
-vagrant global-status
+<code>vagrant global-status</code>
 
 
-## Docker Commands
+### Docker Commands
 
 Zeigt alle verfügbaren Befehle von Docker an<br>
 <code>docker image</code>
@@ -79,14 +79,17 @@ Liste aller laufenden und gestoppten Container
 <code>docker ps -a</code>
 
 
-#### Debugging
+### Debugging
 
 Zeigt alle installierten Layer<br>
 <code>docker image inspect [ID]<code>
 
-docker pull ubuntu/mysql
 
-docker run -d --name mysql-container -e TZ=UTC -p 30306:3306 -e MYSQL_ROOT_PASSWORD=My:S3cr3t/ ubuntu/mysql:8.0-22.04_beta
+### Docker
+
+<code>docker pull ubuntu/mysql</code>
+
+<code>docker run -d --name mysql-container -e TZ=UTC -p 30306:3306 -e MYSQL_ROOT_PASSWORD=My:S3cr3t/ ubuntu/mysql:8.0-22.04_beta</code>
 
 
 

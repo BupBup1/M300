@@ -56,10 +56,11 @@ chown -R ubuntu:ubuntu ~/.ssh
 
 https://github.com/ser-cal/M300-Vagrant-Webserver#nginx-webserver-deklarativ-aufsetzen
 
+### 
 
 <code>vagrant global-status</code>
 
-
+  
 ### Docker Commands
 
 Zeigt alle verfügbaren Befehle von Docker an<br>
